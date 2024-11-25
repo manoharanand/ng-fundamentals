@@ -1,1 +1,4 @@
 after modiying the packages do npm install 
+//put Html in a separete file and use templateUrl in selector
+
+//communicating child component using @Input
