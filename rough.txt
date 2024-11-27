@@ -2,3 +2,10 @@ after modiying the packages do npm install
 //put Html in a separete file and use templateUrl in selector
 
 //communicating child component using @Input
+
+
+//Communication with parent component using @Output
+-> to demonstrate how to pass data back out to the parent
+
+//access child property inside parent component withour using @input/@output decorator  
+usign thumbanil temp variabe

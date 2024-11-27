@@ -5,7 +5,12 @@ import { Component } from "@angular/core";
     template: `
     <div>
         <hr/>
-        <event-thumbnail [event] = "event1"></event-thumbnail>
+        <!-- <event-thumbnail (eventClick)="handleEventClicked($event)"
+            [event]="event1"></event-thumbnail> -->
+        <event-thumbnail #thumbnail [event]="event1"></event-thumbnail>
+        <h3>{{thumbnail.someProperty}}</h3>
+        <!-- <button class="btn btn-primary" (click)="handleClickMe()">Click me!</button> -->
+        <button class="btn btn-primary"(click)="thumbnail.logFoo()">Log me some foo</button>
     </div>`
 })
 //<h2>{{event.name}}</h2> this is interpolation and represents one way binding
@@ -23,4 +28,9 @@ export class EventsListComponent {
             country: 'India'
         }
     }
+
+    handleEventClicked(data) {
+        console.log("received data: ", data)
+    }
 }
+
