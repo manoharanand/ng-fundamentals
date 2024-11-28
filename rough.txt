@@ -17,3 +17,15 @@ usign thumbanil temp variabe
 4. Removing Elements with *ngif and *ngSwitch
 5. Hiding Elements
 6. Adding classes and sytles
+
+//module 6
+Why Routing is Necessary
+Define Routes for Pages
+Link to Routes
+Navigate From Code
+Route Guards
+Resolve
+Route-Based Link Styling
+Lazy Loading
+
+-> the problem with current approach for id routing is for any id it is returning same url

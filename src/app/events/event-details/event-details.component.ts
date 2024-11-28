@@ -1,5 +1,7 @@
 import { Component } from "@angular/core";
 import { EventService } from "../shared/event.service";
+import { ActivatedRoute } from "@angular/router";
+
 //call this page from event service url like : /events/id
 @Component({
     templateUrl: './event-details.component.html',
@@ -12,10 +14,13 @@ import { EventService } from "../shared/event.service";
 export class EventDetailsComponent{
     //inject the service here
     event:any
-    constructor(private eventService:EventService){
+    constructor(private eventService:EventService, 
+        private route:ActivatedRoute){
 
     }
     ngOnInit() {
-        this.event = this.eventService.getEvent(1);
+        //get event is taking number so typecasting it using +
+        this.event = this.eventService.getEvent(
+            +this.route.snapshot.params['id']);
     }
 }
