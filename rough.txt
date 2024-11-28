@@ -29,3 +29,5 @@ Route-Based Link Styling
 Lazy Loading
 
 -> the problem with current approach for id routing is for any id it is returning same url
+
+** now add router link to thumbnail that upon clicking takes to that event Page
