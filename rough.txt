@@ -1,1 +1,35 @@
 after modiying the packages do npm install 
+//put Html in a separete file and use templateUrl in selector
+
+//communicating child component using @Input
+
+
+//Communication with parent component using @Output
+-> to demonstrate how to pass data back out to the parent
+
+//access child property inside parent component withour using @input/@output decorator  
+usign thumbanil temp variabe
+
+//module 4
+1. interpolation and Expressions
+2. Event bindings and statements 
+3. Reepeatin Data with *ngFor
+4. Removing Elements with *ngif and *ngSwitch
+5. Hiding Elements
+6. Adding classes and sytles
+
+//module 6
+Why Routing is Necessary
+Define Routes for Pages
+Link to Routes
+Navigate From Code
+Route Guards
+Resolve
+Route-Based Link Styling
+Lazy Loading
+
+-> the problem with current approach for id routing is for any id it is returning same url
+
+** now add router link to thumbnail that upon clicking takes to that event Page
+
+//how to navigate into pages from our code
